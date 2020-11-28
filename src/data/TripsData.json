@@ -1,0 +1,30 @@
+[
+    {
+        "img":"../assets/images/Africa-1.jpg",
+        "alt": "Serengeti National Park",
+        "name": "Serengeti National Park",
+        "button": "View destination"
+
+    },
+    {
+        "img":"../assets/images/img2.jpg",
+        "alt": "Mala Mala Game Reserve ",
+        "name": "Mala Mala Game Reserve",
+        "button": "View destination"
+
+    },
+    {
+        "img":"../assets/images/img3.jpg",
+        "alt": "Lower Zambezi National Park",
+        "name": "Lower Zambezi National Park",
+        "button": "view destination"
+
+    },
+    {
+        "img":"../assets/images/img4.jpg",
+        "alt": "Moremi Game Reserve",
+        "name": "Moremi Game Reserve ",
+        "button": "View destination"
+
+    }
+]
