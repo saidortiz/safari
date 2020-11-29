@@ -1,9 +1,26 @@
 import React from "react"
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { graphql, useStaticQuery } from "gatsby"
 
 
 const Testimonials = () => {
+    const data = useStaticQuery( graphql`
+        query  {
+            allFile(filter: {ext: {regex: "/(jpg)|(png)|(jpeg)/"},
+            name: {in: ["test1","test2"]}}) {
+            edges {
+              node {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+          `)
     return (
         <TestimonialsContainer>
             <TopLine>
@@ -26,7 +43,10 @@ const Testimonials = () => {
                     </Testimonial>
                 </ColumnOne>
                 <ColumnTwo>
-                    Image
+                {data.allFile.edges.map( (image,key)=> (
+                    <Images key={key} fluid={image.node.childImageSharp.fluid} />
+                ))}
+                    
                 </ColumnTwo>
             </ContentWrapper>
         </TestimonialsContainer>
@@ -71,13 +91,13 @@ padding:0 2rem;
 
 const ColumnOne =  styled.div `
 display:grid;
-grid-auto-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
 
 `
 
 const ColumnTwo =  styled.div `
 display:grid;
-grid-auto-columns:1fr 1fr;
+grid-template-columns:1fr 1fr;
 margin-top:2rem;
 grid-gap:18px;
 
