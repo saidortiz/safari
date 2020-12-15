@@ -3,55 +3,6 @@ import styled from 'styled-components'
 import {StatsData} from "../data/StatsData"
 
 
-const StatsData = [
-    {
-        icon:(<GiEarthAmerica
-            css={`
-                color:#047bf1;    
-            `}
-            
-            />),
-        title:"Over 100 Destination",
-        desc:"Travel to over 100 unique places",
-    },
-    {
-        icon:(<MdAirplanemodeActive
-            css={`
-                color:#047bf1;    
-            `}
-            
-
-         />),
-        title:"Over 100 Destination",
-        desc:"Travel to over 100 unique places",
-    },
-    {
-        icon:(<MdTimer
-            css={`
-                color:#047bf1;    
-            `}
-            
-         />),
-        title:"Over 100 Destination",
-        desc:"Travel to over 100 unique places",
-    },
-    {
-        icon:(<FaMoneyCheck 
-            css={`
-                color:#047bf1;    
-            `}
-            
-        
-        />),
-        title:"Over 100 Destination",
-        desc:"Travel to over 100 unique places",
-    }
-    
-    
-   
-
-]
-
 const Stats = () => {
     return (
         <StatsContainer>
