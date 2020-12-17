@@ -43,7 +43,7 @@ function getTrips(data){
                             <ImLocation />
                             <ProductTitle>{item.node.name}</ProductTitle>
                     </TextWrap>
-                    <Button to="/trips" primary="true" round="true" css={`position:absolute; top:420px; font-size:14px;`} >{item.node.button}</Button>
+                    <Button to="/" primary="true" round="true" css={`position:absolute; top:420px; font-size:14px;`} >{item.node.button}</Button>
                 </ProductInfo>
             </ProductCard>
             
