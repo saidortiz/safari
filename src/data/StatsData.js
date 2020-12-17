@@ -7,7 +7,7 @@ export const StatsData = [
     {
         icon:(<GiEarthAmerica
             css={`
-                color:#047bf1;    
+                color:#FFA776;    
             `}
             
             />),
@@ -17,7 +17,7 @@ export const StatsData = [
     {
         icon:(<MdAirplanemodeActive
             css={`
-                color:#047bf1;    
+                 color:#FFA776;        
             `}
             
 
@@ -28,7 +28,7 @@ export const StatsData = [
     {
         icon:(<MdTimer
             css={`
-                color:#047bf1;    
+                 color:#FFA776;        
             `}
             
          />),
@@ -38,7 +38,7 @@ export const StatsData = [
     {
         icon:(<FaMoneyCheck 
             css={`
-                color:#047bf1;    
+                 color:#FFA776;        
             `}
             
         

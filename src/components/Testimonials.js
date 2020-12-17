@@ -64,8 +64,8 @@ height:100%;
 `
 
 const TopLine =  styled.div `
-color:#077bf1;
-font-size:1rem;
+color:#FFA776;
+font-size:2rem;
 padding-left:2rem;
 margin-bottom:0.75rem;
 `
