@@ -4,6 +4,7 @@ import styled from "styled-components"
 import {FaBars} from "react-icons/fa"
 import { MenuData } from "../data/MenuData"
 import { Button } from "./Button"
+
 const Header = () => {
     return (
       <Nav>
@@ -61,7 +62,7 @@ const MenuBars = styled(FaBars)`
 
 const NavMenu = styled.div `
 display:flex;
-aling-items:center;
+align-items:center;
 margin-right:-317px;
 
 @media screen and (max-width:768px){
