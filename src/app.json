@@ -1,10 +1,10 @@
 {
-    "buildpacks":[
-        {
-            "url": "heroku/nodejs"
-        },
-        {
-            "url":"https://git.heroku.com/shielded-taiga-94084.git"
-        }
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      },
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-static"
+      }
     ]
-}
+  }
